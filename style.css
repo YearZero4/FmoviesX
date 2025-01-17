@@ -1,0 +1,118 @@
+body{
+background-color: #aaa;
+font-family: Calibri;
+
+}
+
+#search{
+text-align: center;
+height: 35px;
+display: flex;
+justify-content: center;
+padding:10px;
+}
+
+a{
+	display: none;
+}
+input{
+outline: none;
+padding-left: 10px;
+font-family: Arial;
+font-size: 19px;
+padding: 10px;
+}
+
+input:hover{
+border: 2px solid #09f;
+}
+
+button{
+background-color: #09f;
+cursor: pointer;
+border:none;
+border-radius: 3px;
+font-family: Arial;
+font-size: 16px;
+padding: 0px 10px 0px 10px;
+}
+#father{
+background-color: #bbb;
+
+}
+
+#results{
+padding:10px;
+}
+#container{
+
+display: flex;
+flex-wrap: wrap;
+gap:15px;
+justify-content: center;
+padding: 10px;
+
+}
+
+
+#movie{
+background-color: #002;
+color:#fff;
+text-align: center;
+display: flex;
+flex-direction: column;
+align-items: center;
+overflow: auto;
+cursor: pointer;
+}
+
+#movie:hover{
+background: #09f;
+transition: border 0.5s;
+
+}
+
+@media screen and (max-width: 800px) {
+#movie{
+height: auto;
+width: 130px;
+border-radius: 3px;
+}
+img{
+margin-top:10px;
+width: 90%;
+height: 140px;
+margin-bottom: 10px;
+}
+
+img:hover{
+	width: 95%;
+	transition: 0.5s;
+}
+
+
+input{
+width: 100%;
+}
+}
+
+@media screen and (min-width: 801px) {
+#movie{
+height: 200px;
+width: 200px;
+padding:10px;
+}
+img{
+width: 70%;
+height: 170px;
+margin-bottom: 10px;
+}
+input{
+width: 40%;
+}
+
+img:hover{
+	width: 80%;
+	transition: 0.5s;
+}
+}
